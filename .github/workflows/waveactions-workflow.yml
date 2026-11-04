@@ -1,0 +1,10 @@
+name: My workflow
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: [self-hosted, macOS]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build
+        run: echo "Add your build steps"
